@@ -20,25 +20,6 @@
 <body class="en" data-duration="360">
   <main>
     <section class="slide welcome highlight">
-          <h1><img class="logo-stacked" src="framework/img/teenslc-logo-stacked-white.png" alt="Teens Learning Code logo">Welcome!</h1>
-
-          <div class="instructions">
-            <h2>Get <br>Connected</h2>
-            <p><strong>Wifi:</strong> wifi network</p>
-            <p><strong>Password:</strong> wifi password</p>
-            <hr>
-
-            <h2>Complete this survey before we begin</h2>
-            <p><a href="http://bit.ly/teensurveyclc">http://bit.ly/teensurveyclc</a></p>
-          </div>
-          <footer>
-            <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
-            <p class="left">Content by <a href="http://medium.com/@pearlchen">Pearl Chen</a> and <a href="http://christinatruong.com">Christina Truong</a> for <a prefix="cc: http://creativecommons.org/ns#" href="http://canadalearningcode.ca" property="cc:attributionName" rel="cc:attributionURL">Canada Learning Code</a></p>
-            <p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
-          </footer>
-        </section>
-
-        <section class="slide welcome highlight">
       <h1><img class="logo-stacked" src="framework/img/teenslc-logo-stacked-white.png" alt="Teens Learning Code logo">Getting Started</h1>
 
       <div class="instructions">
@@ -49,13 +30,6 @@
               <li>unzip the learner file (<em>extract all</em> if you’re on a PC)</li>
               <li>open <em>slides.html</em> in the browser to view the slides</li>
             </ul>
-          </li>
-          <li>Atom Editor: <a href="http://atom.io">http://atom.io</a>
-            <ul>
-              <li>Chromebook users can use <a href="https://chrome.google.com/webstore/detail/caret/fljalecfjciodhpcledpamjachpmelml?hl=en" target="_blank">Caret</a></li>
-            </ul>
-          </li>
-          <li>Chrome Browser: <a href="https://www.google.ca/chrome/browser/desktop/">https://www.google.ca/chrome</a></li>
           </li>
         </ol>
       </div>
@@ -138,75 +112,6 @@
         ---
         ###Resource
         Get more info about browsers here: http://browsehappy.com
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Code Editor
-
-        There are many, many free and paid options. Today we'll be using [Atom](https://atom.io/). If you cannot download Atom, try [Brackets](http://brackets.io/).
-
-        [![Atom Logo](framework/img/workshop/atom-logo.png)](https://atom.io/)
-        [![Brackets Logo](framework/img/workshop/brackets-logo.png)](http://brackets.io/)
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Editing your project files
-
-        Inside of the folder you downloaded today, there are many folders that contain different files.
-
-        ```xml
-        teenslc-intro-to-javascript-master
-          |-- framework // Contains files for this slide presentation. Do not edit!
-          |-- exercises // Contains exercise files for this workshop.
-          |-- slides.html // This is the file you are viewing right now!
-        ```
-
-        Open the **exercises** folder in the text editor to access the files.
-        Go to **File** > ** Add Project Folder**. A popup will appear.
-
-        ![](framework/img/workshop/editor-add-project-1.jpg)
-
-        * then, navigate to the **teenslc-intro-to-javascript-master** folder
-        * select the **exercises** folder & click **Open**
-
-        The folder will now appear in the sidebar. Click the arrow icon to see files within.
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Getting to know Atom
-
-        Having a good text editor and learning how to use it to its full potential will help your work flow. Today, let's update the text wrapping option to make it easier to read long blocks of code and text.
-
-        Go to **Preferences** to open the customization options.
-
-        ![](framework/img/workshop/atom-preferences.jpg)<!-- .element: width="70%" -->
-
-        The **Settings** tab will show by default with a list of setting types on the left.
-
-        ![](framework/img/workshop/atom-core-settings.png)<!-- .element: width="70%" -->
-
-        From the list, select **Editor** and scroll down to the **Soft Wrap** option.
-
-        ![](framework/img/workshop/atom-editor-settings.png)<!-- .element: width="70%" -->
-
-        Make sure the **Soft Wrap** option is checked.
-
-        ![](framework/img/workshop/atom-soft-wrap.png)<!-- .element: width="70%" -->
-
-        ---
-        ###Resources
-
-        *   [Atom documentation](https://atom.io/docs)
-        *   [Atom Shortcuts cheat sheet](https://bugsnag.com/blog/atom-editor-cheat-sheet)
-        *   [Customizing Atom](https://atom.io/docs/v0.61.0/customizing-atom)
-        *   [Themes](https://atom.io/themes) for Atom
-        *   [Snippets](https://github.com/atom/snippets) - create your own code snippet shortcuts
       </script>
     </section>
 
@@ -532,48 +437,18 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        # JavaScript & HTML
-
-        JavaScript can be added pretty much anywhere on a web page but it is commonly added either in the `<head>` section or just before the closing `</body>` tag.
-
-        However, the JavaScript code itself must always be contained within the <code>&lt;script&gt;&lt;/script&gt;</code> tags.
-
-<pre><code>&lt;html>
-  &lt;head>
-    &lt;title>JavaScript example!&lt;/title>
-    &lt;script>
-      // Javascript in the head tag!
-    &lt;/script>
-  &lt;/head>
-
-  &lt;body>
-    &lt;script>
-      // Javascript in the body tag!
-    &lt;/script>
-  &lt;/body>
-&lt;/html></code></pre>
-
-        ---
-        ###Pro tip!
-
-        Putting the JavaScript just *before* the closing `</body>` tag will allow the page to load first before the JavaScript executes. This is important when manipulating HTML elements.
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
         #Class Exercise: Say My Name, part 1
 
         <img src="framework/img/workshop/name-text-rawbot.gif" alt="allow to type name" style="height: 80px;" class='left'> Allow me to type in my name.
 
         <hr class="clear">
-        In your editor, open **1-hello.html** and add the following snippet:
+        In your editor add the following snippet:
 
         ```
         prompt("What is your name?");
         ```
 
-        Then open **1-hello.html** in the browser and test the prompt.
+        Test the prompt.
       </script>
     </section>
 
@@ -681,7 +556,7 @@
           </li>
         </ol>
 
-        Back in <!-- .element: class="delayed" --> **1-hello.html**, let's update our program.
+        Let's update our program.
       </script>
     </section>
 
@@ -691,7 +566,7 @@
 
         The last part is getting the computer to repeat your name back to you.  Let's use `document.write()` to say hello and repeat the name variable.
 
-        Back in **1-hello.html**, update your program.  It should look something like this:
+        Update your program.  It should look something like this:
 
         ```
         var name = prompt("What is your name?");
@@ -711,38 +586,6 @@
         Also, note that `document.write()` and `prompt()` are quick ways to test and experiment but is not best practice for use in "the real world."
 
         We'll go over more examples and dive deeper into **variables** and **functions** as the course progresses.
-      </script>
-    </section>
-
-    <section class="slide title" data-markdown>
-      <script type="text/template">
-        #Today's Project!
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Today's Project
-
-        ![planet robots website](framework/img/workshop/planet-robot-website.png)<!-- .element: class="left" -->
-
-        As the owner of a thriving online store, **Planet Robots**, you have to make sure you have a top notch website.
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Today's Project
-
-        Some things you'll want to think about for your site:
-
-        * offer online shopping
-        * print shipping labels
-        * offer member only sales
-        <!-- * customers shouldn't be able to submit empty forms -->
-        * shopping cart items must be calculated properly
-
-        To create a website that can handle these requirements, let's take a deeper dive into  **variables**, **functions**  and later, we'll also talk about **objects** and **conditionals**.
       </script>
     </section>
 
@@ -885,13 +728,8 @@
       <script type="text/template">
         # Exercise: Shipping information (~10mins)
 
-        Let's gather some basic shipping information.
-
-        Open **2-shipping-info.html** in the editor and the browser.
-
-        Right now, if you run the program in the browser, the shipping information is not stored and the output will be blank.
-
-        How can this be fixed?
+        Let's gather some basic shipping information. We want to access our users name and postal code.
+        Try and write a program which can get this information and write it on the screen.
 
         1. Use variables to store the name and postal code values.
         1. Use `document.write()` to output the name and postal values to verify the information is being stored.
@@ -962,9 +800,7 @@
       <script type="text/template">
         #Exercise: Shopping cart totals (~10mins)
 
-        Open **3-shopping-cart.html** in your editor.
-
-        There are 3 variables defined in the exercise file:
+        Let's calculate the subtotal, discount and total for this transaction.
 
         ```
         var tshirtPrice = 25;
@@ -1080,39 +916,6 @@
       </script>
     </section>
 
-    <section class="slide llc-loves">
-      <h1>Who loves Teens Learning Code?</h1>
-
-      When would reassigning values come in handy? Click this button:
-
-      <button id="moreLove">
-        <img src="framework/img/workshop/llc-logo.png"> Love!
-        <span id="update">0</span>
-      </button>
-
-      <script>
-        var loves = 0;
-        var update = document.getElementById('update');
-        var button = document.getElementById("moreLove");
-
-        function moreLove(){
-          loves = loves + 1;
-          update.innerHTML = loves;
-        }
-        button.onclick = moreLove;
-        //https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick
-      </script>
-
-      <p class="delayed">Let's look at how this could work.</p>
-<pre class="delayed"><code>var loves = 0; // start value at 0
-var update = document.getElementById('update'); // HTML element to be updated
-
-// custom function - contains instructions to update the count
-function moreLove(){
-  loves = loves + 1; // take the current value of "love" and adds 1
-  update.innerHTML = loves; // updates the HTML element with the current value of "loves"
-}</code></pre>
-    </section>
 
     <section class="slide" data-markdown data-toc>
       <script type="text/template">
@@ -1272,18 +1075,14 @@ function moreLove(){
         document.write(robot);
         ```
 
-        Their current output is 10, 17.5, and 12.995.
-
-        In the editor and browser, open **4-methods.html**. Use the `toFixed()` method to update the outputted values.
-
-        <!-- .element: class="note" -->The solution can be found in **4-methods-solution.html**.
+        Their current output is 10, 17.5, and 12.995. Use the .toFixed() method.
       </script>
     </section>
 
     <section class="slide title" data-markdown>
       <script type="text/template">
         # Part Two
-        ## The DOM, Functions, Methods, Conditionals
+        ## DOM, Functions, Methods, Conditionals
       </script>
     </section>
 
@@ -1360,42 +1159,6 @@ function moreLove(){
       </script>
     </section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Review
-
-        Let's look at the "loves" button again, this time with the HTML as well.
-
-        ```
-        <button id="moreButton">
-          <img src="framework/img/workshop/llc-logo.png"> Love!
-          <span id="update">0</span>
-        </button>
-        ```
-        ```
-        // starts the count at 0
-        var loves = 0;
-        // targets the "update" element
-        var update = document.getElementById("update");
-        // targets the "moreButton" element
-        var button = document.getElementById("moreButton");
-
-        // custom function
-        function moreLove(){
-          // Add 1 to current count
-          loves = loves + 1;
-          // applies an .innerHTML method to the update element's count
-          update.innerHTML = loves;
-        }
-
-        // on button click, execute the custom moreLove() function
-        button.onclick = moreLove;
-        ```
-
-        Let's go over how to create your own custom functions.
-      </script>
-    </section>
-
     <section class="slide" data-markdown data-toc>
       <script type="text/template">
         #Creating your own functions
@@ -1463,7 +1226,7 @@ function moreLove(){
         <p>Applying everything that has been covered so far, let's create a program to allow the customer to update the quantity by selecting an add or remove button, like in the sample on the left.</p>
 
         <p><strong>Note!</strong> Right now, removing items can result in a negative number.  We'll update that in the last exercise.</p>
-
+        <a href="https://repl.it/@bilalqadar/ExcitingDimgrayAssembly"> https://repl.it/@bilalqadar/ExcitingDimgrayAssembly </a>
         <script>
           // from 5-update-quantities.html exercise
           var quantity = 0;
@@ -1503,8 +1266,6 @@ function moreLove(){
         1. Execute the Add button instructions only when the Add button is clicked.
         1. Execute the Remove button instructions only when the Remove button is clicked.
 
-
-        Open **5-update-quantities.html** in your editor. Let's go through each step together.
       </script>
     </section>
 
@@ -1522,8 +1283,6 @@ function moreLove(){
         How do you assign it a value of 0?<!-- .element: class="delayed" -->
 
         <pre class="delayed"><code>var quantity = 0;</code></pre>
-
-        Add this snippet within the<!-- .element: class="delayed" --><code>&lt;script&gt;&lt;/script&gt;</code> tags.
 
       </script>
     </section>
